@@ -60,13 +60,15 @@ module.exports = app => {
       defaultExtension: '.js',
     },
     builder: builderConfig,
-    multipleStatic: [{
-      prefix: '/',
-      dir: path.join(baseDir, 'app/public'),
-    }, {
-      prefix: '/static',
-      dir: path.join(baseDir, builderConfig.dir.build, builderConfig.dir.server),
-    }],
+    static: {
+      dir: [{
+        prefix: '/',
+        dir: path.join(baseDir, '/app/public'),
+      }, {
+        prefix: '/static',
+        dir: path.join(baseDir, builderConfig.dir.build, builderConfig.dir.static),
+      }],
+    },
   });
 };
 
