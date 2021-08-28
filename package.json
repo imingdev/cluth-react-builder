@@ -1,6 +1,6 @@
 {
   "name": "@cluth/react-builder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "mingdev <mingdev@163.com>",
   "scripts": {
     "dev": "egg-bin dev",
