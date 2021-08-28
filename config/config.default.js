@@ -63,7 +63,7 @@ module.exports = app => {
     static: {
       dir: [{
         prefix: '/',
-        dir: path.join(baseDir, '/app/public'),
+        dir: path.join(baseDir, 'public'),
       }, {
         prefix: '/static',
         dir: path.join(baseDir, builderConfig.dir.build, builderConfig.dir.static),
